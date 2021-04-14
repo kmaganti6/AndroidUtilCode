@@ -28,7 +28,8 @@ public final class BitUtils {
         return (byte) ((source >> pos) & 1);
 
     }
-
+    //TODO: comment is way too long
+    //FIXME: Delete comments for readabilty
 
     /**
      * 将运算数指定位置的值置为指定值<br>
