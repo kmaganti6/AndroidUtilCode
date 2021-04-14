@@ -221,12 +221,11 @@ public abstract class CommonActivity extends BaseActivity {
         mDialogLoading = new CommonDialogLoading().init(this, listener);
         mDialogLoading.show();
     }
-    //TODO: null being assigned to class variable
-    //FIXME: replace the null variable
+
     public void dismissLoading() {
         if (mDialogLoading != null) {
             mDialogLoading.dismiss();
-            mDialogLoading = null;
+         //   mDialogLoading = null;
         }
     }
 
