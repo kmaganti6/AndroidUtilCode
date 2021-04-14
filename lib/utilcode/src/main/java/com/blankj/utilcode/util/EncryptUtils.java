@@ -1161,9 +1161,10 @@ public final class EncryptUtils {
         }
 
         final byte[] ret = new byte[data.length];
-        //TODO: Too many declarations in one line
-        //FIXME: make them seperate
-        int i = 0, k, t;
+
+        int i = 0;
+        int k;
+        int t;
         for (int counter = 0; counter < data.length; counter++) {
             i = (i + 1) & 0xFF;
             j = (j + iS[i]) & 0xFF;
