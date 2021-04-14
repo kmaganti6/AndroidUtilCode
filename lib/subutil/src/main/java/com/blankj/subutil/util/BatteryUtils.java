@@ -160,7 +160,8 @@ public final class BatteryUtils {
     public interface OnBatteryStatusChangedListener {
         void onBatteryStatusChanged(Status status);
     }
-
+    //TODO: the names are the same for the field
+    //FIXME: rename the field class
     public static final class Status {
         private int level;
         @BatteryStatus
