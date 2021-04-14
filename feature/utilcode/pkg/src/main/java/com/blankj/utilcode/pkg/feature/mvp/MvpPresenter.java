@@ -15,11 +15,10 @@ import com.blankj.utilcode.util.Utils;
 public class MvpPresenter extends BasePresenter<MvpView>
         implements MvpMvp.Presenter {
 
-    @Override
-    //TODO: the method is not used
-    //FIXME: delete the section containing that specfic method
-    public void onBindView() {
-    }
+    //@Override
+
+    //public void onBindView() {
+    //}
 
     @Override
     public void updateMsg() {
