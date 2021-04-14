@@ -116,13 +116,10 @@ public final class LunarUtils {
         Lunar lunar = new Lunar();
         int index = solar.solarYear - SOLAR_1_1[0];
         int data = (solar.solarYear << 9) | (solar.solarMonth << 5) | (solar.solarDay);
-        //TODO: the solar 11 isnt used here, and used below
-        //FIXME: delete this solar 11
-        int solar11 = 0;
         if (SOLAR_1_1[index] > data) {
             index--;
         }
-        solar11 = SOLAR_1_1[index];
+        int solar11 = SOLAR_1_1[index];
         int y = getBitInt(solar11, 12, 9);
         int m = getBitInt(solar11, 4, 5);
         int d = getBitInt(solar11, 5, 0);
