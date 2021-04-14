@@ -53,6 +53,7 @@ public class CountryUtils {
      *
      * @return the country
      */
+
     public static String getCountryBySim() {
         TelephonyManager manager = (TelephonyManager) Utils.getApp().getSystemService(Context.TELEPHONY_SERVICE);
         if (manager != null) {

@@ -188,7 +188,8 @@ public class DangerousUtils {
     private static File getFileByPath(final String filePath) {
         return isSpace(filePath) ? null : new File(filePath);
     }
-
+    //TODO: there are 2 instances inside the loop
+    //FIXME: Move them outside
     private static boolean isSpace(final String s) {
         if (s == null) return true;
         for (int i = 0, len = s.length(); i < len; ++i) {
