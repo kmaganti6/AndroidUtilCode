@@ -22,9 +22,7 @@ public class OtherPkgApiImpl extends OtherModuleApi {
 
     @Override
     public ApiBean invokeWithReturnValue() {
-        //TODO: is not declared final
-        //FIXME: put a final in front of the string
-         String value = "value";
+         final String value = "value";
         return new ApiBean(value);
     }
 }
