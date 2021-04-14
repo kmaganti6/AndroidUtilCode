@@ -18,6 +18,8 @@ public abstract class BasePresenter<V extends BaseView> {
 
     private static final String TAG = BaseView.TAG;
 
+    //TODO: Use the conceurrent map
+    //FIXME: implement the concurrent hashmap instead
     private V                                          mView;
     private Map<Class<? extends BaseModel>, BaseModel> mModelMap = new HashMap<>();
     private boolean                                    isAlive   = true;
