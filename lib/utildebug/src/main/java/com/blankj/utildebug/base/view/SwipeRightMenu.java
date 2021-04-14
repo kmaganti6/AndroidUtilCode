@@ -71,6 +71,8 @@ public class SwipeRightMenu extends LinearLayout {
             }
             mMenusWidth += bean.getWidth();
         }
+        //TODO: the index varible is being interated
+        //FIXME: instead the for each can be used
         for (int i = 0; i < mMenus.size(); i++) {
             mMenus.get(i).setOpenMargin(0);
         }
