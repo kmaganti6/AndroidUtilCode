@@ -31,6 +31,7 @@ public final class AppStoreUtils {
      *
      * @return 跳转到应用商店的 Intent
      */
+    //TODO: remove the .size() == 0 
     public static Intent getAppStoreIntent() {
         return getAppStoreIntent(Utils.getApp().getPackageName(), false);
     }
